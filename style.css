@@ -1,0 +1,55 @@
+body { 
+    background-color: yellow;
+}
+
+h1,p {
+    font-style: italic;
+    text-align: center;
+    margin: 40px;
+}
+
+#game{
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-flex;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+    background-color: white;
+}
+
+#character{
+    width: 20px;
+    height: 50px;
+    background-color: purple;
+    position: relative;
+    top: 150px;
+}
+
+.animate{
+    animation: jump 500ms;
+}
+
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+
+#block{
+    width: 20px;
+    height: 20px;
+    background-color: orangered;
+    position: relative;
+    top: 90%;
+    left: 100%;
+    animation: block 1s infinite linear;
+}
+
+@keyframes block{
+    0%{left:480px;}
+    100%{left:-40px;}
+}
